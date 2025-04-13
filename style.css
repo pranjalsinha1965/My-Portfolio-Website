@@ -169,7 +169,7 @@ section {
   height: 80vh;
 }
 
-/* #profile::before {
+#profile::before {
   content: "";
   position: absolute;
   top: 0;
@@ -178,7 +178,7 @@ section {
   bottom: 0;
   background: linear-gradient(to right, rgba(255, 0, 0, 0.5), rgba(0, 0, 255, 0.5));
   z-index: -1;
-} */
+}
 
 .section__pic-container {
   display: flex;
