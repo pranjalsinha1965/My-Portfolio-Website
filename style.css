@@ -142,10 +142,6 @@ a:hover {
   opacity: 1;
 }
 
-.hamburger-icon span:first-child {
-  transform: none;
-}
-
 /* SECTIONS */
 
 section {
@@ -161,12 +157,27 @@ section {
 }
 
 /* PROFILE SECTION */
-
 #profile {
   display: flex;
   justify-content: center;
+  position: relative;
+  height: 80vh;
+  background-image: url("C:/Users/KIIT/Desktop/Wall-Paper.jpeg");
+  background-size: cover;
+  background-position: center;
   gap: 5rem;
   height: 80vh;
+}
+
+#profile::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to right, rgba(255, 0, 0, 0.5), rgba(0, 0, 255, 0.5));
+  z-index: -1;
 }
 
 .section__pic-container {
