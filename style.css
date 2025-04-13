@@ -169,7 +169,7 @@ section {
   height: 80vh;
 }
 
-/* #profile::before {
+#profile::before {
   content: "";
   position: absolute;
   top: 0;
