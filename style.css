@@ -162,7 +162,7 @@ section {
   justify-content: center;
   position: relative;
   height: 80vh;
-  background-image: url("C:/Users/KIIT/Desktop/My-Portfolio-Website/assets/Wall-Paper.jpeg");
+  background-image: url("My-Portfolio-Website/assets/Wall-Paper.jpeg");
   background-size: cover;
   background-position: center;
   gap: 5rem;
@@ -440,4 +440,97 @@ footer {
 
 footer p {
   text-align: center;
+}
+
+/* PROFILE SECTION */
+#profile {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 80vh;
+  background: linear-gradient(to right, #6a11cb, #2575fc); /* Purple-Blue Gradient */
+  background-image: url("C:/Users/KIIT/Desktop/My-Portfolio-Website/assets/Wall-Paper.jpeg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  gap: 5rem;
+}
+
+/* ABOUT SECTION */
+#about {
+  position: relative;
+background-color: #f3f4f6; /* Light Gray */
+color: #111;
+}
+
+/* EXPERIENCE SECTION */
+#experience {
+  position: relative;
+  background-color: #e0f7fa; /* Pale Cyan */
+  color: #111;
+}
+
+/* PROJECTS SECTION */
+#projects {
+  position: relative;
+  background-color: #fff8e1; /* Light Yellow */
+  color: #111;
+}
+
+/* CONTACT SECTION */
+#contact {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 70vh;
+  background-color: #e8f5e9; /* Minty Light Green */
+  color: #111;
+}
+
+/* FOOTER SECTION */
+footer {
+  height: 26vh;
+  margin: 0 1rem;
+  background-color: #1a1a1a; /* Deep Dark Gray */
+  color: white;
+}
+
+/* SECTIONS: Default Styling for Padding & Layout */
+section {
+  padding-top: 4vh;
+  height: fit-content;
+  margin: 0 10rem;
+  box-sizing: border-box;
+  min-height: 96vh;
+}
+
+/* CARD-LIKE Containers */
+.details-container,
+.color-container {
+background-color: white;
+border: rgb(163, 163, 163) 0.1rem solid;
+border-radius: 2rem;
+padding: 1.5rem;
+}
+
+/* Ensure Readable Text in Colored Sections */
+.section__text,
+.about-details-container,
+.experience-details-container,
+.contact-info-upper-container,
+.article-container {
+  color: #333;
+}
+
+.project-title {
+  color: #000;
+}
+
+.project-btn {
+  background-color: white;
+  color: #000;
+}
+
+.contact-info-container p {
+  color: #000;
 }
