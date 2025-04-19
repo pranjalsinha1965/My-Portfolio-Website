@@ -166,7 +166,6 @@ section {
   background-size: cover;
   background-position: center;
   gap: 5rem;
-  height: 80vh;
 }
 
 #profile::before {
