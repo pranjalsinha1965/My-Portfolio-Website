@@ -666,3 +666,45 @@ body.bright-power {
   --pink-sand: #00DDFF;
   --dark-sand: #0049B7;
 }
+
+/* Default light mode styles (already present, keep them as-is) */
+
+/* Dark mode styles */
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.dark-mode .section__text__p1,
+.dark-mode .section__text__p2,
+.dark-mode .title,
+.dark-mode .logo,
+.dark-mode .nav-links a,
+.dark-mode .details-container h3,
+.dark-mode .details-container p {
+  color: #ffffff;
+}
+
+.dark-mode nav {
+  background-color: #1e1e1e;
+}
+
+.dark-mode .details-container {
+  background-color: #2a2a2a;
+  border: 1px solid #3c3c3c;
+}
+
+.dark-mode .btn-color-1 {
+  background-color: #ffffff;
+  color: #121212;
+}
+
+.dark-mode .btn-color-2 {
+  background-color: #3c3c3c;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+
+.dark-mode .icon {
+  filter: brightness(0) invert(1);
+}
