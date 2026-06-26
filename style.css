@@ -365,6 +365,34 @@ article .icon {
 
 /* PROJECTS SECTION */
 
+.about-containers {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.color-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.text-container {
+    margin-top: 1rem;
+    text-align: left;
+}
+
+.text-container h4 {
+    margin: 10px 0 5px;
+    color: var(--text-color);
+}
+
+.text-container p {
+    line-height: 1.6;
+    text-align: justify;
+}
+
 #projects {
   position: relative;
 }
