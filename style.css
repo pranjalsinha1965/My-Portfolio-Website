@@ -363,59 +363,222 @@ article .icon {
   cursor: default;
 }
 
-/* PROJECTS SECTION */
-
-.about-containers {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    justify-content: center;
-}
-
-.color-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.text-container {
-    margin-top: 1rem;
-    text-align: left;
-}
-
-.text-container h4 {
-    margin: 10px 0 5px;
-    color: var(--text-color);
-}
-
-.text-container p {
-    line-height: 1.6;
-    text-align: justify;
-}
+/* ==========================================
+   PROJECTS SECTION
+========================================== */
 
 #projects {
   position: relative;
+  padding: 2rem 0;
 }
+
+/* ---------- Project Layout ---------- */
+
+.about-containers {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.second-row {
+  justify-content: center;
+}
+
+/* ---------- Project Cards ---------- */
 
 .color-container {
-  border-color: rgb(163, 163, 163);
+  width: 100%;
+  max-width: 380px;
   background: rgb(250, 250, 250);
+  border: 1px solid rgb(163, 163, 163);
+  border-radius: 2rem;
+  padding: 1.5rem;
+  transition: all 0.35s ease;
+  animation: fadeUp 0.8s ease;
 }
 
-.project-img {
-  border-radius: 2rem;
-  width: 90%;
-  height: 90%;
+/* ---------- Card Hover ---------- */
+
+.color-container:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
 }
+
+/* ---------- Project Image ---------- */
+
+.project-img {
+  width: 90%;
+  height: auto;
+  border-radius: 2rem;
+  transition: transform 0.4s ease;
+}
+
+.color-container:hover .project-img {
+  transform: scale(1.04);
+}
+
+/* ---------- Titles ---------- */
 
 .project-title {
   margin: 1rem;
   color: black;
+  text-align: center;
 }
 
+/* ---------- Text ---------- */
+
+.text-container {
+  margin-top: 1rem;
+}
+
+.text-container h4 {
+  margin: 10px 0 5px;
+  font-weight: 600;
+}
+
+.text-container p {
+  text-align: justify;
+  line-height: 1.6;
+}
+
+/* ---------- Buttons ---------- */
+
 .project-btn {
+
   color: black;
-  border-color: rgb(163, 163, 163);
+  border: 1px solid rgb(163,163,163);
+
+  transition:
+      background-color .3s ease,
+      color .3s ease,
+      transform .2s ease,
+      box-shadow .3s ease;
+}
+
+/* Hover */
+
+.project-btn:hover{
+
+  background:#000;
+  color:#fff;
+  transform:translateY(-3px);
+
+  box-shadow:0 8px 18px rgba(0,0,0,.25);
+
+  cursor:pointer;
+}
+
+/* Click Animation */
+
+.project-btn:active{
+
+  transform:scale(.95);
+
+  box-shadow:0 3px 8px rgba(0,0,0,.2);
+}
+
+/* ---------- Fade Animation ---------- */
+
+@keyframes fadeUp{
+
+  from{
+
+    opacity:0;
+    transform:translateY(40px);
+
+  }
+
+  to{
+
+    opacity:1;
+    transform:translateY(0);
+
+  }
+
+}
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media screen and (max-width:1200px){
+
+  .about-containers{
+
+      gap:1.5rem;
+
+  }
+
+  .color-container{
+
+      max-width:45%;
+
+  }
+
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media screen and (max-width:768px){
+
+  .about-containers{
+
+      flex-direction:column;
+      align-items:center;
+
+  }
+
+  .color-container{
+
+      width:95%;
+      max-width:450px;
+
+  }
+
+  .project-title{
+
+      font-size:1.3rem;
+
+  }
+
+  .text-container p{
+
+      font-size:0.95rem;
+
+  }
+
+}
+
+/* ==========================================
+   SMALL MOBILE
+========================================== */
+
+@media screen and (max-width:480px){
+
+  .color-container{
+
+      width:100%;
+      padding:1.2rem;
+
+  }
+
+  .project-title{
+
+      font-size:1.1rem;
+
+  }
+
+  .project-btn{
+
+      width:100%;
+      margin-top:0.8rem;
+
+  }
+
 }
 
 /* CONTACT */
